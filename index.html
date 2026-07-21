@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mohamed Aziz Nasri — Software Engineering Student at ESPRIT. Full-Stack Developer & Graphic Designer building modern software and beautiful user experiences." />
+    <meta name="author" content="Mohamed Aziz Nasri" />
+    <meta name="keywords" content="Mohamed Aziz Nasri, Software Engineer, Full-Stack Developer, Graphic Designer, ESPRIT, Portfolio" />
+    <meta property="og:title" content="Mohamed Aziz Nasri — Software Engineer & Graphic Designer" />
+    <meta property="og:description" content="Building modern software and beautiful user experiences." />
+    <meta property="og:type" content="website" />
+    <title>Mohamed Aziz Nasri — Software Engineer & Graphic Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Animated background -->
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+    <div class="stars" aria-hidden="true"></div>
+
+    <!-- Nav -->
+    <header class="nav" id="nav">
+      <a href="#home" class="nav-logo">MN<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#design">Design</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun">☀️</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-inner">
+          <p class="hero-eyebrow reveal">Software Engineering Student</p>
+          <h1 class="hero-title reveal">MOHAMED AZIZ NASRI</h1>
+          <p class="hero-roles reveal">
+            <span>Full-Stack Developer</span>
+            <span class="dot">•</span>
+            <span>Graphic Designer</span>
+          </p>
+          <p class="hero-tagline reveal">
+            Building <span class="grad-text">Modern Software</span> &amp;<br />
+            <span class="grad-text">Beautiful User Experiences</span>
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#resume" class="btn btn-ghost">Download CV</a>
+          </div>
+
+          <!-- Interactive terminal -->
+          <div class="terminal reveal" id="terminal">
+            <div class="terminal-bar">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+              <span class="terminal-title">aziz@portfolio: ~</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <p class="t-line">Type <code>help</code> to see available commands.</p>
+              <div id="terminalOutput"></div>
+              <div class="t-input-line">
+                <span class="t-prompt">visitor@portfolio:~$</span>
+                <input id="terminalInput" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+                <span class="t-cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="section-head reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <div class="photo-placeholder">MN</div>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p class="about-hello">Hello!</p>
+            <p>I'm <strong>Mohamed Aziz Nasri</strong>, a Software Engineering student at ESPRIT.</p>
+            <p>I enjoy building scalable web applications, designing clean interfaces, and creating professional visual identities.</p>
+            <p class="about-interests-label">My interests include</p>
+            <ul class="about-interests">
+              <li>Web Development</li>
+              <li>Artificial Intelligence</li>
+              <li>Networking</li>
+              <li>Cybersecurity</li>
+              <li>UI / UX Design</li>
+              <li>Graphic Design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="section-head reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Programming</h3>
+            <div class="chips">
+              <span>Java</span><span>PHP</span><span>JavaScript</span><span>TypeScript</span><span>C++</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Frameworks</h3>
+            <div class="chips">
+              <span>Symfony</span><span>Next.js</span><span>React</span><span>Bootstrap</span><span>Doctrine</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Databases</h3>
+            <div class="chips">
+              <span>MySQL</span><span>Oracle</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Networking</h3>
+            <div class="chips">
+              <span>Cisco</span><span>VPN</span><span>OSPF</span><span>DHCP</span><span>NAT</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Design</h3>
+            <div class="chips">
+              <span>Photoshop</span><span>Illustrator</span><span>Canva</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="section-head reveal">
+          <span class="section-tag">03 — Experience</span>
+          <h2 class="section-title">My Journey</h2>
+        </div>
+        <div class="timeline">
+          <div class="t-item reveal"><span class="t-year">2023</span><div class="t-card"><h3>Started Software Engineering</h3><p>Began studies at ESPRIT — foundations of programming, algorithms, and systems.</p></div></div>
+          <div class="t-item reveal"><span class="t-year">2024</span><div class="t-card"><h3>Developed Java Applications</h3><p>Built desktop and object-oriented applications with Java and C++.</p></div></div>
+          <div class="t-item reveal"><span class="t-year">2025</span><div class="t-card"><h3>Built Symfony Projects</h3><p>Full-stack web applications with PHP, Symfony, MySQL, and Bootstrap.</p></div></div>
+          <div class="t-item reveal"><span class="t-year">2026</span><div class="t-card"><h3>Learning Next.js &amp; Building Portfolio</h3><p>Exploring modern React, TypeScript, and cloud deployment.</p></div></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section-head reveal">
+          <span class="section-tag">04 — Projects</span>
+          <h2 class="section-title">Things I've Built</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-shot shot-pharmacy"><span class="shot-label">Smart Pharmacy</span></div>
+            <div class="project-body">
+              <h3>Smart Pharmacy</h3>
+              <p>A web platform for pharmacy inventory, prescriptions, and customer management.</p>
+              <div class="chips small"><span>PHP</span><span>Symfony</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="#" class="btn-mini">GitHub</a>
+                <a href="#" class="btn-mini">Live Demo</a>
+                <a href="#" class="btn-mini ghost">Case Study</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-shot shot-edutech"><span class="shot-label">EduTech</span></div>
+            <div class="project-body">
+              <h3>EduTech</h3>
+              <p>An e-learning platform with course management, quizzes, and student tracking.</p>
+              <div class="chips small"><span>PHP</span><span>Symfony</span><span>MySQL</span><span>Bootstrap</span></div>
+              <div class="project-links">
+                <a href="#" class="btn-mini">GitHub</a>
+                <a href="#" class="btn-mini">Live Demo</a>
+                <a href="#" class="btn-mini ghost">Case Study</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-shot shot-network"><span class="shot-label">Enterprise Network</span></div>
+            <div class="project-body">
+              <h3>Enterprise Network</h3>
+              <p>Designed an enterprise network topology with VPN, routing (OSPF), and Cisco Packet Tracer.</p>
+              <div class="chips small"><span>Cisco</span><span>VPN</span><span>OSPF</span><span>Routing</span></div>
+              <div class="project-links">
+                <a href="#" class="btn-mini">GitHub</a>
+                <a href="#" class="btn-mini">Live Demo</a>
+                <a href="#" class="btn-mini ghost">Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- GRAPHIC DESIGN -->
+      <section class="section" id="design">
+        <div class="section-head reveal">
+          <span class="section-tag">05 — Design</span>
+          <h2 class="section-title">Graphic Design Gallery</h2>
+        </div>
+        <div class="design-filters reveal" id="designFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="logos">Logos</button>
+          <button class="filter-btn" data-filter="posters">Posters</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+        </div>
+        <div class="design-grid" id="designGrid">
+          <div class="design-item reveal" data-cat="logos" style="background:linear-gradient(135deg,#2563EB,#38BDF8)"><span>Logo</span></div>
+          <div class="design-item reveal" data-cat="logos" style="background:linear-gradient(135deg,#7C3AED,#2563EB)"><span>Logo</span></div>
+          <div class="design-item reveal tall" data-cat="posters" style="background:linear-gradient(135deg,#0EA5E9,#0369A1)"><span>Restaurant Poster</span></div>
+          <div class="design-item reveal" data-cat="posters" style="background:linear-gradient(135deg,#F59E0B,#DC2626)"><span>Gym Poster</span></div>
+          <div class="design-item reveal" data-cat="branding" style="background:linear-gradient(135deg,#10B981,#059669)"><span>Business Card</span></div>
+          <div class="design-item reveal tall" data-cat="branding" style="background:linear-gradient(135deg,#8B5CF6,#6366F1)"><span>Flyer</span></div>
+          <div class="design-item reveal" data-cat="ui" style="background:linear-gradient(135deg,#2563EB,#1E3A8A)"><span>Website Design</span></div>
+          <div class="design-item reveal" data-cat="ui" style="background:linear-gradient(135deg,#38BDF8,#0EA5E9)"><span>Mobile App</span></div>
+          <div class="design-item reveal" data-cat="ui" style="background:linear-gradient(135deg,#7C3AED,#4F46E5)"><span>Dashboard</span></div>
+          <div class="design-item reveal" data-cat="posters" style="background:linear-gradient(135deg,#EC4899,#7C3AED)"><span>Event Poster</span></div>
+          <div class="design-item reveal" data-cat="branding" style="background:linear-gradient(135deg,#14B8A6,#0891B2)"><span>Banner</span></div>
+          <div class="design-item reveal" data-cat="logos" style="background:linear-gradient(135deg,#F97316,#DC2626)"><span>Color Palette</span></div>
+        </div>
+      </section>
+
+      <!-- GITHUB STATS -->
+      <section class="section" id="github">
+        <div class="section-head reveal">
+          <span class="section-tag">06 — GitHub</span>
+          <h2 class="section-title">Coding Activity</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal"><span class="stat-num" data-count="15">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat-card reveal"><span class="stat-num" data-count="8">0</span><span class="stat-label">Programming Languages</span></div>
+          <div class="stat-card reveal"><span class="stat-num" data-count="100">0</span><span class="stat-label">Git Commits</span></div>
+          <div class="stat-card reveal"><span class="stat-num" data-count="50">0</span><span class="stat-label">Graphic Designs</span></div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section class="section" id="certificates">
+        <div class="section-head reveal">
+          <span class="section-tag">07 — Certificates</span>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card reveal"><span class="cert-badge">★</span><h3>Cisco CCNA</h3><p>Networking fundamentals &amp; routing</p></div>
+          <div class="cert-card reveal"><span class="cert-badge">★</span><h3>Symfony Developer</h3><p>Full-stack PHP framework certification</p></div>
+          <div class="cert-card reveal"><span class="cert-badge">★</span><h3>UI/UX Design</h3><p>Figma &amp; design systems</p></div>
+          <div class="cert-card reveal"><span class="cert-badge">★</span><h3>Web Development</h3><p>Modern JavaScript &amp; React</p></div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="section-head reveal">
+          <span class="section-tag">08 — Testimonials</span>
+          <h2 class="section-title">Kind Words</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal"><p>"Aziz is a dedicated developer who delivers clean, scalable code. A pleasure to work with."</p><div class="testi-author"><span class="avatar">T</span><div><strong>Prof. Slim</strong><span>ESPRIT Teacher</span></div></div></div>
+          <div class="testi-card reveal"><p>"His design sense is outstanding. He transformed our brand identity completely."</p><div class="testi-author"><span class="avatar">C</span><div><strong>A Client</strong><span>Brand Owner</span></div></div></div>
+          <div class="testi-card reveal"><p>"Reliable, creative, and always learning. Aziz raises the bar for the whole team."</p><div class="testi-author"><span class="avatar">F</span><div><strong>Yassine</strong><span>Friend &amp; Collaborator</span></div></div></div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section class="section" id="resume">
+        <div class="section-head reveal">
+          <span class="section-tag">09 — Resume</span>
+          <h2 class="section-title">My Resume</h2>
+        </div>
+        <div class="resume-card reveal">
+          <div class="resume-preview">
+            <h3>Mohamed Aziz Nasri</h3>
+            <p class="resume-sub">Software Engineering Student • Full-Stack Developer • Graphic Designer</p>
+            <div class="resume-meta">
+              <span>ESPRIT — 2023 / 2026</span>
+              <span>Tunis, Tunisia</span>
+            </div>
+            <p>A summary of my education, experience, skills, and projects. Download the full PDF for the complete document.</p>
+          </div>
+          <div class="resume-actions">
+            <a href="#" class="btn btn-primary" download>Download Resume</a>
+            <a href="#" class="btn btn-ghost">Preview Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-head reveal">
+          <span class="section-tag">10 — Contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-wrap">
+          <form class="contact-form glass reveal" id="contactForm">
+            <div class="field"><label for="cName">Name</label><input id="cName" name="name" type="text" required placeholder="Your name" /></div>
+            <div class="field"><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" required placeholder="you@example.com" /></div>
+            <div class="field"><label for="cSubject">Subject</label><input id="cSubject" name="subject" type="text" required placeholder="Subject" /></div>
+            <div class="field"><label for="cMessage">Message</label><textarea id="cMessage" name="message" rows="5" required placeholder="Your message..."></textarea></div>
+            <button type="submit" class="btn btn-primary full">Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+          <div class="contact-side reveal">
+            <a href="https://wa.me/" class="contact-pill" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a href="mailto:" class="contact-pill">📧 One-click Email</a>
+            <p class="contact-note">Open to internships, freelance design, and collaboration.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Mohamed Aziz Nasri</h3>
+          <p>Software Engineer • Graphic Designer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:">Email</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Mohamed Aziz Nasri. Crafted with care.</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
